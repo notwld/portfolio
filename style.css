@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    transition: 0.8s;
+}
+body{
+    background-color: #121212;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    display: flex;
+    margin: 55px 100px!important;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+nav h1{
+    font-weight: lighter;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    height: 100%; */
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#home{
+    overflow: hidden;
+    width: 100vw;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin:100px 0px;
+    overflow: hidden;
+}
+.content .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin:20px 100px;
+    overflow: visible!important;
+}
+.content .about h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin: 0;
+    color: #A441D2;
+}
+.content .about span{
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 7px;
+}
+.image .circle{
+    height: 753px ;
+    width: 744px;
+    border: 2px solid #A441D2;
+    position: absolute;
+    right: -10%;
+    top: -50%;
+    border-radius: 50%;
+}
+.image{
+    margin-right: 75px;
+}
+.image img{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    z-index: 9999999;
+    position: absolute;
+    right: 9%;
+    top: 28%;
+
+}
+.about .colors{
+    display: flex;
+    width: 145px;
+    height: 25px;
+
+    margin-top: 70px;
+} 
+.purple, .red, .green, .blue{
+ margin-right: 10px;
+ cursor: pointer;
+ transition: none!important;
+}
+.purple{
+    background-color: #A441D2;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+}
+.red{
+    background-color: #D24141;
+    border: 1px solid #D24141;
+    width: 100%;
+    height: 100%;
+}
+.green{
+    background-color: #41D272;
+    border: 1px solid #41D272;
+    width: 100%;
+    height: 100%;
+}
+.blue{
+    background-color: #4150D2;
+    border: 1px solid #4150D2;
+    width: 100%;
+    height: 100%;
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    margin:20px 100px;
+}
+.education h1{
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0;
+    color: #A441D2;
+}
+.education .grid{
+    display: grid;
+    grid-column: span 2;
+    grid-gap: 50px;
+    width: 100%;
+    height: 100%;
+    margin-top:45px;
+}
+.education .grid .institute{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow: visible!important;
+
+}
+.education .grid .institute .description{
+   margin-left: 20px;
+}
+.education .grid .institute img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    margin:100px 100px;
+    margin-bottom: 36px;
+}
+.projects h1{
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0;
+    color: #A441D2;
+}
+.projects .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    width: 100%;
+    height: 100%;
+    margin-top:45px;
+}
+.projects .grid .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    overflow: visible!important;
+
+}
+.projects .grid .project .description{
+   margin-left: 20px;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
