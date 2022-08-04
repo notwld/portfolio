@@ -41,6 +41,10 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
+
+}
+nav ul li img{
+    cursor: pointer;
 }
 #home{
     overflow: hidden;
@@ -83,9 +87,10 @@ nav ul li a{
     width: 744px;
     border: 2px solid #A441D2;
     position: absolute;
-    right: -10%;
-    top: -50%;
+    right: -50%;
+    top: -85%;
     border-radius: 50%;
+    z-index: -999999;
 }
 .image{
     margin-right: 75px;
@@ -145,12 +150,7 @@ nav ul li a{
     height: 100%;
     margin:20px 100px;
 }
-.education h1{
-    font-weight: bold;
-    font-size: 48px;
-    margin: 0;
-    color: #A441D2;
-}
+
 .education .grid{
     display: grid;
     grid-column: span 2;
@@ -189,7 +189,7 @@ nav ul li a{
     margin:100px 100px;
     margin-bottom: 36px;
 }
-.projects h1{
+.projects h1,.contact h1,.education h1{
     font-weight: bold;
     font-size: 48px;
     margin: 0;
@@ -218,43 +218,15 @@ nav ul li a{
 .projects .grid .project .description{
    margin-left: 20px;
 }
-.dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-.active, .dot:hover {
-background-color: #717171;
-}
 
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+    height: 100%;
+    margin:100px 100px;
+    margin-bottom: 36px;
+    
 }
