@@ -87,8 +87,8 @@ nav ul li img{
     width: 744px;
     border: 2px solid #A441D2;
     position: absolute;
-    right: -50%;
-    top: -85%;
+    right: -11%;
+    top: -45%;
     border-radius: 50%;
     z-index: -999999;
 }
@@ -96,13 +96,12 @@ nav ul li img{
     margin-right: 75px;
 }
 .image img{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     z-index: 9999999;
-    position: absolute;
-    right: 9%;
-    top: 28%;
+    right: 10%;
+    top: 37%;
 
 }
 .about .colors{
